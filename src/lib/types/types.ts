@@ -8,20 +8,19 @@ export interface Job {
 	location: string;
 	description: string;
 	technologies: string[];
-	achievements: string[];
-	url?: string; // optional company website
+	url?: string;
 }
 
 export interface Education {
 	institution: string;
-	degree: string;
+	qualification: string;
 	field: string;
 	period: {
 		start: string;
 		end: string | 'Present';
 	};
 	location: string;
-	achievements?: string[]; // Optional
+	url?: string;
 }
 
 export interface Project {
@@ -33,7 +32,6 @@ export interface Project {
 		github?: string;
 	};
 	image?: string;
-	highlights: string[];
 }
 
 export interface Skill {
@@ -43,7 +41,7 @@ export interface Skill {
 
 export interface PersonalData {
 	workHistory: Job[];
-	education: Education[];
+	educationHistory: Education[];
 	projects: Project[];
 	skills: string[];
 }
