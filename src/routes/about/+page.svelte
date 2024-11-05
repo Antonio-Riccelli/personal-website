@@ -7,9 +7,7 @@
 
 <div class="mt-24 mb-20 overflow-auto w-full">
 	<p class="p-6 m-auto text-justify">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, culpa? Laboriosam non
-		voluptatum, facere vel recusandae consequatur. Quam obcaecati impedit facilis cumque sequi
-		itaque id assumenda, exercitationem deleniti adipisci voluptatum.
+		A brief snapshot of my work experience and education.
 	</p>
 	<div>
 		<h2 class="p-6 font-bold text-2xl m-auto text-center">Experience</h2>
@@ -35,7 +33,7 @@
 					</p>
 					<a
 						href={url}
-						class="flex w-max p-3 my-2 rounded-2xl border-2 dark:border-blue-600 hover:dark:bg-gray-800"
+						class="flex w-max p-3 my-3 rounded-2xl border-2 dark:border-blue-600 hover:dark:bg-gray-800"
 						>Company Website<ArrowRightOutline class="ms-2 w-5 h-5" /></a
 					>
 				</TimelineItem>
@@ -54,7 +52,7 @@
 					<p>{location}</p>
 					<a
 						href={url}
-						class="flex w-max p-3 my-2 rounded-2xl border-2 dark:border-blue-600 hover:dark:bg-gray-800"
+						class="flex w-max p-3 my-3 rounded-2xl border-2 dark:border-blue-600 hover:dark:bg-gray-800"
 						>Website<ArrowRightOutline class="ms-2 w-5 h-5" /></a
 					>
 				</TimelineItem>
