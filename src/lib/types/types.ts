@@ -45,3 +45,8 @@ export interface PersonalData {
 	projects: Project[];
 	skills: string[];
 }
+
+export interface ContactLink {
+	name: string;
+	href: string;
+}
