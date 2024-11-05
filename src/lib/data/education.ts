@@ -3,13 +3,13 @@ import type { Education } from "$lib/types/types"
 const educationHistory : Education[] = [
     {
         institution: "School Of Code",
-        qualification: "Full Stack Software Development Bootcamp",
-        field: "Software Development",
+        qualification: "Bootcamp",
+        field: "Full Stack Software Development ",
         period: {
             start: "November 2021",
             end: "April 2022"
     },
-    location: "England, United Kingdom (Remote)",
+    location: "England, UK (Remote)",
     url: "https://www.schoolofcode.co.uk/"
 },
 {

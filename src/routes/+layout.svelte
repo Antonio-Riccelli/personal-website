@@ -5,7 +5,7 @@
 	import { Footer, FooterLinkGroup, FooterLink, FooterCopyright } from 'flowbite-svelte';
 	import { DarkMode } from 'flowbite-svelte';
 	let btnClass =
-		'text-yellow-400 dark:text-orange-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2  z-50';
+		'text-yellow-400 dark:text-orange-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2 z-50 fixed right-0 bottom-0 md:static';
 	$: activeUrl = $page.url.pathname;
 	let activeClass =
 		'text-black font-bold bg-green-700  md:bg-transparent md:dark:text-white dark:bg-green-600 md:dark:bg-transparent';
