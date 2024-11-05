@@ -5,7 +5,7 @@
 	import educationHistory from '$lib/data/education';
 </script>
 
-<div class="mt-24 mb-20 overflow-auto w-full">
+<div class="mt-24 mb-20 overflow-auto w-full text-start">
 	<p class="p-6 m-auto text-justify">
 		A brief snapshot of my work experience and education.
 	</p>
