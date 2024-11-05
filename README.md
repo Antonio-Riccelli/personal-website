@@ -1,38 +1,27 @@
-# create-svelte
+# Personal Website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A simple personal website built with SvelteKit.
 
-## Creating a project
+## Technologies
 
-If you're seeing this, you've probably already done this step. Congrats!
+- SvelteKit
+- TailwindCSS
+- TypeScript
+- Vite
+- Netlify
+- Playwright
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Project Diary
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### 05/11/2024
 
-## Developing
+Creating a personal website from scratch using SvelteKit. Reasons:
+- Previous iteration was quite old
+- I wanted to learn Svelte/SvelteKit.
+  
+No grandiose or unique design ideas for this version, so I've started simple and clean. Basic structure with an `about`, `projects` and `contacts` page, dark/light mode switch, responsiveness etc.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+I would still like to create a gamified version of it, in the style of a 2D SNES RPG game with pixel graphics and all. I could have both and ask users which one they would like to enter upon landing on the homepage. I will probably start working on that once completed this one.
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Keeping track of my tasks and progress on a Trello board. The idea was to make it public and shareable, but I didn't realise I'd need a paid subscription to do that. That's beyond annoying. I'll probably just use GitHub projects next time.
+![Trello board](image.png)
