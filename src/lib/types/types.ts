@@ -27,9 +27,9 @@ export interface Project {
 	name: string;
 	description: string;
 	technologies: string[];
-	url?: {
+	url: {
 		live?: string;
-		github?: string;
+		github: string;
 	};
 	image?: string;
 }
