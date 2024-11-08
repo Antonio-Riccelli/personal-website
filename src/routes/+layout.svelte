@@ -5,20 +5,20 @@
 	import { Footer, FooterLinkGroup, FooterLink, FooterCopyright } from 'flowbite-svelte';
 	import { DarkMode } from 'flowbite-svelte';
 	let btnClass =
-		'text-yellow-400 dark:text-orange-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2 z-50 fixed right-0 bottom-0 md:static';
+		'text-yellow-400 dark:text-orange-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg text-xl p-2 z-50 fixed right-0 bottom-0 md:static';
 	$: activeUrl = $page.url.pathname;
-	let activeClass =
-		'text-black font-bold bg-green-700  md:bg-transparent md:dark:text-white dark:bg-green-600 md:dark:bg-transparent';
+	let activeClass = 'text-green-400 font-bold dark:text-white dark:bg-transparent';
 	let nonActiveClass =
-		'text-white-200 hover:bg-gray-300 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent';
+		'text-white-200 hover:bg-transparent dark:text-gray-400 dark:hover:text-white  dark:hover:text-white hover:text-green-400';
+
 	$: currentYear = new Date().getUTCFullYear();
 </script>
 
 <div class="relative h-auto w-full text-black dark:text-white">
 	<Navbar
-		class="text-black dark:text-white h-26 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b-4 border-black dark:border-blue-600 dark:bg-gray-800 bg-gray-300"
+		class="text-white h-26 sm:px-4 py-2.5  fixed w-full z-20 top-0 start-0 border-b-4 border-black dark:border-blue-600 dark:bg-gray-800  bg-sky-900"
 	>
-		<NavBrand href="/" class="mx-2">
+		<NavBrand href="/" class="mx-2 hover:text-green-400 dark:hover:text-white">
 			<p class="font-extrabold text-3xl">AR</p>
 		</NavBrand>
 		<NavHamburger />
@@ -32,13 +32,9 @@
 </div>
 
 <Footer
-	class="text-black dark:text-white fixed bottom-0 start-0 z-20 w-full p-4 h-20 bg-gray-300 border-t-4 dark:border-blue-600 border-black  shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 flex-shrink "
+	class="text-white fixed bottom-0 start-0 z-20 w-full p-4 h-20 border-t-4 dark:border-blue-600 border-black shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 flex-shrink bg-sky-900"
 >
-	<FooterCopyright
-		by="Antonio Riccelli™"
-		year={currentYear}
-		classSpan="text-black dark:text-white"
-	/>
+	<FooterCopyright by="Antonio Riccelli™" year={currentYear} classSpan="text-white" />
 
 	<div class="flex">
 		<FooterLinkGroup
@@ -47,10 +43,10 @@
 			<FooterLink
 				href="https://github.com/Antonio-Riccelli"
 				target="_blank"
-				classLi="dark:hover:bg-blue-600 hover:bg-white rounded-full p-1 hover:animate-spin"
+				classLi="dark:hover:bg-blue-600 hover:bg-green-400  rounded-full p-1 hover:animate-spin"
 			>
 				<svg
-					class="w-6 h-6 text-gray-800 dark:text-white"
+					class="w-6 h-6 text-white dark:text-white"
 					aria-hidden="true"
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
@@ -70,10 +66,10 @@
 			<FooterLink
 				href="https://www.linkedin.com/in/antonioriccelli/"
 				target="_blank"
-				classLi="dark:hover:bg-blue-600 hover:bg-white rounded-full p-1 hover:animate-spin"
+				classLi="dark:hover:bg-blue-600 hover:bg-green-400  rounded-full p-1 hover:animate-spin"
 			>
 				<svg
-					class="w-6 h-6 text-gray-800 dark:text-white"
+					class="w-6 h-6 dark:text-white text-white"
 					aria-hidden="true"
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"

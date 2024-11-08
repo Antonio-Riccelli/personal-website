@@ -1,12 +1,10 @@
 <script>
-	import { Card, Button, Toggle } from 'flowbite-svelte';
+	import { Card, Button } from 'flowbite-svelte';
 	import { ArrowRightOutline } from 'flowbite-svelte-icons';
 	import projects from '$lib/data/projects';
 </script>
 
-
-<div class="w-full mt-24 mb-20 overflow-auto text-center">
-
+<div class="w-full mt-20 mb-20 overflow-auto text-center lightmode-bg dark:bg-black">
 	<h1 class="font-extrabold">Projects</h1>
 	<div class="flex flex-wrap justify-center dark:text-white text-white">
 		{#each projects as { name, description, technologies, url, image }}
@@ -28,7 +26,9 @@
 				<div>
 					<ul class="list-none p-0 m-0 flex flex-wrap">
 						{#each technologies as technology}
-							<li class="p-2 mx-1 my-2 inline-block dark:bg-blue-600 rounded-lg">
+							<li
+								class="p-2 mx-1 my-2 inline-block bg-green-400 text-white dark:bg-blue-600 rounded-lg"
+							>
 								{technology}
 							</li>
 						{/each}
