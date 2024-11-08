@@ -4,7 +4,7 @@
 	import projects from '$lib/data/projects';
 </script>
 
-<div class="w-full mt-24 mb-24 text-center">
+<div class="w-full mt-24 mb-20 overflow-auto text-center">
 	<h1 class="font-extrabold">Projects</h1>
 	<div class="flex flex-wrap justify-center dark:text-white text-white">
 		{#each projects as { name, description, technologies, url, image }}
