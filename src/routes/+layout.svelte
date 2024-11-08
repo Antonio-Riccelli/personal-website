@@ -14,9 +14,9 @@
 	$: currentYear = new Date().getUTCFullYear();
 </script>
 
-<div class="relative px-8 h-auto w-full text-black dark:text-white">
+<div class="relative h-auto w-full text-black dark:text-white">
 	<Navbar
-		class="text-black dark:text-white h-26 px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b-4 border-black dark:border-blue-600 dark:bg-gray-800 bg-gray-300"
+		class="text-black dark:text-white h-26 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b-4 border-black dark:border-blue-600 dark:bg-gray-800 bg-gray-300"
 	>
 		<NavBrand href="/" class="mx-2">
 			<p class="font-extrabold text-3xl">AR</p>
